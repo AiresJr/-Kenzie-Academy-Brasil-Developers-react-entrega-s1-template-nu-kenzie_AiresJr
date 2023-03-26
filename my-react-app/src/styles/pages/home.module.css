@@ -1,0 +1,28 @@
+.flexBox{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 50px;
+}
+
+@media(min-width: 750px){
+    .flexBox{
+        flex-direction: row;
+        gap: 90px;
+    }
+
+    .left{
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .right {
+       width: 100%;
+       
+    }
+}
+
+.right p{
+    color: var(--color-grey5);
+}
+

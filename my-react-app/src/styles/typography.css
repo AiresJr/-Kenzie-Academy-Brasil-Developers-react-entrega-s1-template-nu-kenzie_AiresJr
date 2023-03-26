@@ -1,0 +1,38 @@
+.title {
+  font-family: "Nunito", sans-serif;
+}
+
+
+
+.title.one {
+  font-weight: 800;
+  font-size: 2.4rem;
+}
+
+.title.two {
+  font-weight: 700;
+  font-size: 1.45rem;
+}
+
+.title.three {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.title.four {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.headline {
+  font-family: "Nunito" ,sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+
