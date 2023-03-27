@@ -1,12 +1,12 @@
 import { useState } from "react";
 import "./styles/reset.css";
-import { v4 as uuidv4 } from "uuid";
-import { Header } from "./components/Header";
-import { FinanceList } from "./components/FinanceList";
-import { FinanceTotal } from "./components/FinanceTotal";
-import { CreateForm } from "./components/form";
+import { Header } from "./components/Header/index";
+import { FinanceList } from "./components/FinanceList/index";
+import { FinanceTotal } from "./components/FinanceTotal/index";
+import { CreateForm } from "./components/form/index";
 import "./styles/index.css";
 import styles from "./styles/pages/home.module.css";
+import { v4 as uuidv4 } from "uuid";
 
 function App() {
   const [financeList, setFinanceList] = useState([]);
@@ -18,7 +18,9 @@ function App() {
   };
 
   const removeFinanceFromList = (financeId) => {
-    const newFinanceList = financeList.filter((finance) => finance.id !== financeId);
+    const newFinanceList = financeList.filter(
+      (finance) => finance.id !== financeId
+    );
     setFinanceList(newFinanceList);
   };
 
@@ -33,12 +35,15 @@ function App() {
         <div className={styles.flexBox}>
           <div className={styles.left}>
             <CreateForm addFinanceToFinanceList={addFinanceToFinanceList} />
-            <FinanceTotal totalFinance={totalFinance}/>
+            <FinanceTotal totalFinance={totalFinance} />
           </div>
 
           <div className={styles.right}>
             <h1 className="title three">Resumo Financeiro</h1>
-            <FinanceList financeList={financeList} removeFinanceFromList={removeFinanceFromList} />
+            <FinanceList
+              financeList={financeList}
+              removeFinanceFromList={removeFinanceFromList}
+            />
           </div>
         </div>
       </main>
