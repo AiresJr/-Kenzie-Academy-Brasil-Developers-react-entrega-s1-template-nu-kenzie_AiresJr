@@ -1,10 +1,10 @@
 import { useState } from "react";
 import "./styles/reset.css";
 import { v4 as uuidv4 } from "uuid";
-import { Header } from "./components/Header";
-import { FinanceList } from "./components/FinanceList";
-import { FinanceTotal } from "./components/FinanceTotal";
-import { CreateForm } from "./components/form";
+import { Header } from "./components/Header/index";
+import { FinanceList } from "./components/FinanceLis/index";
+import { FinanceTotal } from "./components/FinanceTotal/index";
+import { CreateForm } from "./components/form/index";
 import "./styles/index.css";
 import styles from "./styles/pages/home.module.css";
 
