@@ -11,7 +11,7 @@ export const FinanceCard = ({ finance, removeFinanceFromList }) => {
           </div>
 
           <div className={styles.rightInfos}>
-            <nav className="body">R$ {finance.value},00</nav>
+            <nav className="body">R$ {finance.value.toFixed(2)}</nav>
             <button className="btn sm" onClick={() => removeFinanceFromList(finance.id)}>
               Excluir
             </button>
@@ -25,7 +25,7 @@ export const FinanceCard = ({ finance, removeFinanceFromList }) => {
           </div>
 
           <div className={styles.rightInfos}>
-            <nav className="body">R$ {finance.value},00</nav>
+            <nav className="body">R$ {finance.value.toFixed(2)}</nav>
             <button className="btn sm" onClick={() => removeFinanceFromList(finance.id)}>
               Excluir
             </button>

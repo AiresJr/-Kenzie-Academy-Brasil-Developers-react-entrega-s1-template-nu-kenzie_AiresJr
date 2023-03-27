@@ -9,7 +9,7 @@ export const FinanceTotal = ({ totalFinance }) => {
       <div className={styles.total}>
         <h2 className="title three">Valor total:</h2>
                 
-        <nav className="title three">R$ {totalFinance},00</nav>
+        <nav className="title three">R$ {totalFinance.toFixed(2)}</nav>
 
       </div>
       <nav className="body">O valor se refere ao saldo</nav>
