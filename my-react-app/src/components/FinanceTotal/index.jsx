@@ -8,7 +8,9 @@ export const FinanceTotal = ({ totalFinance }) => {
       <div className={styles.totalBox}>
       <div className={styles.total}>
         <h2 className="title three">Valor total:</h2>
-        <nav className="title three">R$ {totalFinance}</nav>
+                
+        <nav className="title three">R$ {totalFinance},00</nav>
+
       </div>
       <nav className="body">O valor se refere ao saldo</nav>
     </div>

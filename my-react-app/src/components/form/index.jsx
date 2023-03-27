@@ -8,9 +8,15 @@ export const CreateForm = ({addFinanceToFinanceList}) => {
   const [type, setType] = useState("");
 
   const submit = (event) => {
-    event.preventDefault();
+    event.preventDefault( );
     const formData = {description, value, type};
-    addFinanceToFinanceList(formData)
+    if(description !== "" & value !== ""){
+      addFinanceToFinanceList(formData)
+      
+    }else {
+      alert ('Por favor preencha os campos necessários!')
+    }
+     
     
   };
 

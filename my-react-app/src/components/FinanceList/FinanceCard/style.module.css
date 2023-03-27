@@ -1,38 +1,52 @@
 .totalBox {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 80%;
-    height: 87px;
-    background: var(--color-grey1);  
-    border-radius: 4px;
-    padding: 25px;
-    margin-top: 16px;
-    border-left: solid 4px #03B898;
-    gap: 15px;
-  }
-
-.infosBox{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  height: 87px;
+  background: var(--color-grey1);
+  border-radius: 4px;
+  padding: 25px;
+  margin-top: 16px;
+  border-left: solid 4px #03b898;
+  gap: 15px;
 }
 
-.infosBox h1{
-    color: var(--color-grey4);
+.totalBoxOut {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  height: 87px;
+  background: var(--color-grey1);
+  border-radius: 4px;
+  padding: 25px;
+  margin-top: 16px;
+  border-left: solid 4px red;
+  gap: 15px;
 }
 
-.infosBox nav{
-    color: var(--color-grey5);
+.infosBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.rightInfos{
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+.infosBox h1 {
+  color: var(--color-grey4);
 }
 
-.rightInfos nav{
-    color: var(--color-grey4);
+.infosBox nav {
+  color: var(--color-grey5);
+}
+
+.rightInfos {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.rightInfos nav {
+  color: var(--color-grey4);
 }
 

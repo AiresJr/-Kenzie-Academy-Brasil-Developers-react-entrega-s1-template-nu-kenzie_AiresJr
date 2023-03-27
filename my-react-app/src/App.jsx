@@ -22,9 +22,18 @@ function App() {
     setFinanceList(newFinanceList);
   };
 
+ 
+
   const totalFinance = financeList.reduce((previusValue, currentFinance) => {
-    return previusValue + currentFinance.value;
+   
+    if(currentFinance.type ==='Entrada'){
+      return previusValue + currentFinance.value;
+    }else{
+      return previusValue - currentFinance.value;
+    }
+    
   }, 0);
+
 
   return (
     <div>
@@ -33,7 +42,7 @@ function App() {
         <div className={styles.flexBox}>
           <div className={styles.left}>
             <CreateForm addFinanceToFinanceList={addFinanceToFinanceList} />
-            <FinanceTotal totalFinance={totalFinance}/>
+            <FinanceTotal totalFinance={totalFinance} />
           </div>
 
           <div className={styles.right}>
