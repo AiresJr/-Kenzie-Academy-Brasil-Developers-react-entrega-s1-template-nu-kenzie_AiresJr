@@ -1,23 +1,19 @@
 import { useState } from "react";
-import styles from './style.module.css'
+import styles from "./style.module.css";
 
-
-export const CreateForm = ({addFinanceToFinanceList}) => {
+export const CreateForm = ({ addFinanceToFinanceList }) => {
   const [description, setDescription] = useState("");
   const [value, setValue] = useState("");
   const [type, setType] = useState("");
 
   const submit = (event) => {
-    event.preventDefault( );
-    const formData = {description, value, type};
-    if(description !== "" & value !== ""){
-      addFinanceToFinanceList(formData)
-      
-    }else {
-      alert ('Por favor preencha os campos necessários!')
+    event.preventDefault();
+    const formData = { description, value, type };
+    if ((description !== "") & (value !== "")) {
+      addFinanceToFinanceList(formData);
+    } else {
+      alert("Por favor preencha os campos necessários!");
     }
-     
-    
   };
 
   return (
@@ -39,7 +35,9 @@ export const CreateForm = ({addFinanceToFinanceList}) => {
           <option value="Entrada">Entrada</option>
           <option value="Saída">Saída</option>
         </select>
-        <button className="btn lg" type="submit">Inserir valor</button>
+        <button className="btn lg" type="submit">
+          Inserir valor
+        </button>
       </form>
     </div>
   );

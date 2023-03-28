@@ -22,18 +22,13 @@ function App() {
     setFinanceList(newFinanceList);
   };
 
- 
-
   const totalFinance = financeList.reduce((previusValue, currentFinance) => {
-   
-    if(currentFinance.type ==='Entrada'){
+    if (currentFinance.type === "Entrada") {
       return previusValue + currentFinance.value;
-    }else{
+    } else {
       return previusValue - currentFinance.value;
     }
-    
   }, 0);
-
 
   return (
     <div>

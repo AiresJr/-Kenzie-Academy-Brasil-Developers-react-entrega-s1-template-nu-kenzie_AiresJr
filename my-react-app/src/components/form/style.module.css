@@ -25,12 +25,11 @@
 }
 
 .totalBox select {
-    font-family: "Inter", sans-serif;
-    color: var(--color-grey5);
-  }
-
-.totalBox button{
-    font-family: "Inter", sans-serif;
-    color: var(--color-white);
+  font-family: "Inter", sans-serif;
+  color: var(--color-grey5);
 }
-  
+
+.totalBox button {
+  font-family: "Inter", sans-serif;
+  color: var(--color-white);
+}
